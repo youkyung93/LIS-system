@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include "menu.h"	//student's menu or librarian's menu불러줘야됨.
 
-void login();
+void loginAccount();
 
-void login(){
+void loginAccount(){
 	char id[5];
 	char *id;
-
-	//hihihihi
 
 	int password;
 
@@ -17,7 +15,7 @@ void login(){
 	scanf("%c", &id);
 
 	// DB에 저장돼 있는 ID와의 판별코드 작성. 맞으면 distinction+=1;
-.
+
 	printf("PASSWORD: ");
 	scanf("%d", &password);
 	

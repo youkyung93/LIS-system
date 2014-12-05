@@ -2,15 +2,11 @@
 
 #define EXIT 4
 
-void showmenu();
+void showmenu();	//메뉴를 보여주는 함수
 
 void showmenu() {
-	char menu[50];	//name of the menu
-	int menunum;	//the number of menu which user wanted to select
-
-
-	//changed 
-	int test;
+	char menu[50];	//실행할 메뉴의 이름
+	int menunum;	//선택할 메뉴의 번호
 
 	if(menu == "select_user") {
 		printf("1.LIBRARIAN\n");
