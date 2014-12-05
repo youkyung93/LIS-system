@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 #define EXIT 4
 
@@ -9,13 +9,13 @@ void showmenu() {
 	int menunum;	//the number of menu which user wanted to select
 
 
-	//changeddfjdkjfdkjfkdjfdjfdzzzzzzzzzzzzzzzzzzz 
+	//changed 
 	int test;
 
 	if(menu == "select_user") {
 		printf("1.LIBRARIAN\n");
 		printf("2.STUDENT\n");
-		printf("USER SELECT: ");
+		printf("사용자 선택: ");
 		scanf("%d", menunum);
 
 		if(menunum == 1)
@@ -39,7 +39,7 @@ void showmenu() {
 		printf("1.CREATE NEW ACCOUNT\n");
 		printf("2.LOGIN\n");
 		printf("3.EXIT\n");
-		printf("CHOOSE THE MENU: ");
+		printf("메뉴를 선택하세요: ");
 		scanf("%d", menunum);
 
 		if(menunum == 1)
@@ -55,7 +55,7 @@ void showmenu() {
 		printf("2.UPDATE\n");
 		printf("3.DELETE\n");
 		printf("4.EXIT\n");
-		printf("CHOOSE THE MENU: ");
+		printf("메뉴를 선택하세요: ");
 		scanf("%d", menunum);
 
 		if(menunum == 1)
@@ -72,7 +72,7 @@ void showmenu() {
 		printf("1.SEARCH\n");
 		printf("2.DISPLAY RENTED BY ME\n");
 		printf("3.EXIT\n");
-		printf("CHOOSE THE MENU: ");
+		printf("메뉴를 선택하세요: ");
 		scanf("%d", menunum);
 
 		if(menunum == 1)
