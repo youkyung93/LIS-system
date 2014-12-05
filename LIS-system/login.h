@@ -7,6 +7,8 @@ void login(){
 	char id[5];
 	char *id;
 
+	//hihihihi
+
 	int password;
 
 	//int distinction;	//ID와 PASSWORD가 맞는가 판별

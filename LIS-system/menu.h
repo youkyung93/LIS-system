@@ -8,6 +8,10 @@ void showmenu() {
 	char menu[50];	//name of the menu
 	int menunum;	//the number of menu which user wanted to select
 
+
+	//changeddfjdkjfdkjfkdjfdjfdzzzzzzzzzzzzzzzzzzz 
+	int test;
+
 	if(menu == "select_user") {
 		printf("1.LIBRARIAN\n");
 		printf("2.STUDENT\n");
