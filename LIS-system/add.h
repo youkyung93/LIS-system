@@ -5,7 +5,7 @@ void addBook();
 
 void addBook(){
 
-	//DB에 넣는소스들로 바꾸기.
+	//DB에 넣는 소스들로 바꾸기.
 
 	char title[30];
 	char authors[30];
