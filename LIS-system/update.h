@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
 void updateBook();
 
@@ -10,29 +10,30 @@ void updateBook(){
 	int booknumber = 0;
 	int bookinfonum = 0;
 
-	printf("¼öÁ¤ÇÏ°í ½ÍÀº Ã¥ÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("ìˆ˜ì •í•˜ê³  ì‹¶ì€ ì±…ì˜ ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš” : ");
 	scanf("%c", searchbook);
 
-	//DB¿¡¼­ Ã¥ ¸ñ·ÏÀ» ²¨³»¿À´Â ÇÔ¼ö. ²¨³»¿Ã ¶§ Ã¥ ¸ñ·Ï ¾Õ¿¡ ¹øÈ£°¡ ºÙ¿©Áø´Ù. ÀÌ¶§ Ã¥ÀÇ ÀÌ¸§°ú ÀúÀÚÀÇ ÀÌ¸§¸¸ º¸¿©Áø´Ù.
+	//DBì—ì„œ ì±… ëª©ë¡ì„ êº¼ë‚´ì˜¤ëŠ” í•¨ìˆ˜. êº¼ë‚´ì˜¬ ë•Œ ì±… ëª©ë¡ ì•žì— ë²ˆí˜¸ê°€ ë¶™ì—¬ì§„ë‹¤. ì´ë•Œ ì±…ì˜ ì´ë¦„ê³¼ ì €ìžì˜ ì´ë¦„ë§Œ ë³´ì—¬ì§„ë‹¤.
 
-	printf("¿øÇÏ´Â µµ¼­ÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("ì›í•˜ëŠ” ë„ì„œì˜ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ");
 	scanf("%d", &booknumber);
 	
-	//¿©±â¿¡¼­ ÇØ´ç Ã¥ÀÇ Á¤º¸°¡ ³ª¿­µÈ´Ù. ÀÌ¶§ °¢ Á¤º¸µé ¾Õ¿¡ ¹øÈ£°¡ ºÙ¾îÀÖ´Ù.
-	printf("¾î¶² Á¤º¸¸¦ ¼öÁ¤ÇÏ½Ã°Ú½À´Ï±î? ");
+	//ì—¬ê¸°ì—ì„œ í•´ë‹¹ ì±…ì˜ ì •ë³´ê°€ ë‚˜ì—´ëœë‹¤. ì´ë•Œ ê° ì •ë³´ë“¤ ì•žì— ë²ˆí˜¸ê°€ ë¶™ì–´ìžˆë‹¤.
+	printf("ì–´ë–¤ ì •ë³´ë¥¼ ìˆ˜ì •í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ");
 	scanf("%d", &bookinfonum);
 	
 	if(choice =='Y'){
-		puts("´Ù¸¥ Á¤º¸µµ ¼öÁ¤ÇÏ½Ã°Ú½À´Ï±î? (Y/N)");
+		puts("ë‹¤ë¥¸ ì •ë³´ë„ ìˆ˜ì •í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (Y/N)");
 		fflush(stdin);
 		choice =  getchar();
 
-		//if()  À§¿¡ ³ªÅ¸³­ ¹øÈ£¸¦ ¹þ¾î³ªÁö ¾Ê´Â´Ù¸é
-			printf("Ã¥ÀÇ Á¤º¸°¡ ¼º°øÀûÀ¸·Î ¼öÁ¤ µÇ¾ú½À´Ï´Ù.");
-		//else À§¿¡ ³ªÅ¸³­ ¹øÈ£¸¦ ¹þ¾î³ª´Â ¼ýÀÚ¸¦ ÀÔ·ÂÇÑ´Ù¸é
-			printf("¿øÇÏ´Â Ã¥ÀÇ ¹øÈ£¸¦ ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+		//if()  ìœ„ì— ë‚˜íƒ€ë‚œ ë²ˆí˜¸ë¥¼ ë²—ì–´ë‚˜ì§€ ì•ŠëŠ”ë‹¤ë©´
+			printf("ì±…ì˜ ì •ë³´ê°€ ì„±ê³µì ìœ¼ë¡œ ìˆ˜ì • ë˜ì—ˆìŠµë‹ˆë‹¤.");
+		//else ìœ„ì— ë‚˜íƒ€ë‚œ ë²ˆí˜¸ë¥¼ ë²—ì–´ë‚˜ëŠ” ìˆ«ìžë¥¼ ìž…ë ¥í•œë‹¤ë©´
+			printf("ì›í•˜ëŠ” ì±…ì˜ ë²ˆí˜¸ë¥¼ ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš” : ");
 			scanf("%d", &booknumber);
 	}
 	else
-		showmenu(); //¸î¹ømenuÀÏÁö´Â ¸ð¸£°ÚÁö¸¸ librarianÀÇ ±â´ÉÀ» °í¸¦ ¼ö ÀÖ´Â menu·Î ÀÌµ¿ÇÏµµ·Ï ÇÑ´Ù. 
+
+		showmenu(); //ï¿½ï¿½ï¿½menuï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ð¸£°ï¿½ï¿½ï¿½ï¿½ï¿½ librarianï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ menuï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½. 
 }
