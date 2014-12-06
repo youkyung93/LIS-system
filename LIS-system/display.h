@@ -1,13 +1,13 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include "menu.h"
 
 void displaybook();
 
 void displaybook(){
 	
-	printf("ÇöÀç ´ëÃâÁßÀÎ µµ¼­ ¸ñ·Ï\n");
+	printf("í˜„ì¬ ëŒ€ì¶œì¤‘ì¸ ë„ì„œ ëª©ë¡\n");
 	
-	//DB ÀÌ¿ë
+	//DB ì´ìš©
 	/*
 	while(DB.Renting_student == ID){
 		printf(DB.bookname);
