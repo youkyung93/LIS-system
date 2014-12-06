@@ -5,6 +5,8 @@ void displayBook();
 
 void displayBook(){
 	
+	int a;
+
 	printf("현재 대출중인 도서 목록\n");
 	
 	//DB 이용
