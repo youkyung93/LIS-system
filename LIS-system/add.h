@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include "menu.h"	//마지막에 librarian's menu불러줘야됨.
 
-void add();
+void addBook();
 
-void add(){
+void addBook(){
 
 	//DB에 넣는소스들로 바꾸기.
 
