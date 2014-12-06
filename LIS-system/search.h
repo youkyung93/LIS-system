@@ -2,7 +2,6 @@
 #include "menu.h"
 
 void searchBook();
-//hihi
 
 void searchBook(){
 	char keyword[100];
@@ -13,6 +12,8 @@ void searchBook(){
 	
 	printf("검색할 도서의 이름을 입력하세요 : ");
 	scanf("%c",keyword);
+	if(keyword == 'a')
+		printf("검색된 도서들은\n");
 
 	//DB 이용
 	/*
