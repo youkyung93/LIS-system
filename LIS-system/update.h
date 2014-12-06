@@ -1,5 +1,7 @@
 ﻿#include <stdio.h>
 
+void updateBook();
+
 void updateBook(){
 	char searchbook[100]= {0,};
 	char *searchbook;
@@ -32,5 +34,6 @@ void updateBook(){
 			scanf("%d", &booknumber);
 	}
 	else
-		menu(); //몇번menu일지는 모르겠지만 librarian의 기능을 고를 수 있는 menu로 이동하도록 한다. 
+
+		showmenu(); //���menu������ �𸣰����� librarian�� ����� ��� �� �ִ� menu�� �̵��ϵ��� �Ѵ�. 
 }

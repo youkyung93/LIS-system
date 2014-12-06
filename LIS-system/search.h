@@ -1,29 +1,29 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include "menu.h"
 
-void searchbook();
+void searchBook();
+//hihi
 
-
-void searchbook(){
+void searchBook(){
 	char keyword[100];
 
 	int booknumber;
 	int i=1;
 	
-
-	printf("°Ë»öÇÒ µµ¼­ÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+	
+	printf("ê²€ìƒ‰í•  ë„ì„œì˜ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf("%c",keyword);
 
-	//DB ÀÌ¿ë
+	//DB ì´ìš©
 	/*
 	while('%'keyword'%' == DB.bookname){
 	//	printf("%d . %c",i,DB.bookname)
 	}*/
-	printf("¿øÇÏ´Â µµ¼­¹øÈ£¸¦ ¼±ÅÃÇÏ¼¼¿ä : ");
+	printf("ì›í•˜ëŠ” ë„ì„œë²ˆí˜¸ë¥¼ ì„ íƒí•˜ì„¸ìš” : ");
 	scanf("%d",booknumber);
 
-	//DBÀÌ¿ë
-	/*printf(DB.title); ÀÌ·±Çü½Ä
+	//DBì´ìš©
+	/*printf(DB.title); ì´ëŸ°í˜•ì‹
 	*/
 
 	//menu = func_std;

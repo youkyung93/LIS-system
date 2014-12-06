@@ -1,9 +1,9 @@
 ﻿#include <stdio.h>
 #include "menu.h"
 
-void displaybook();
+void displayBook();
 
-void displaybook(){
+void displayBook(){
 	
 	printf("현재 대출중인 도서 목록\n");
 	
