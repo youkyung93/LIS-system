@@ -17,7 +17,7 @@ char user[10]="";		//librarian인지 student인지 구분
 
 void showMenu(char menu[50]){	//메뉴를 보여주는 함수
 
-	if(menu == "select_user") {
+	if(strcmp(menu,"select_user")==0) {
 		printf("1.LIBRARIAN\n");
 		printf("2.STUDENT\n");
 		printf("사용자 선택: ");
@@ -32,7 +32,7 @@ void showMenu(char menu[50]){	//메뉴를 보여주는 함수
 			showMenu("login_std");	//STUDENT
 		}
 	}
-	else if(menu == "login_lb") {
+	else if(strcmp(menu,"login_lb")==0) {
 		printf("--------------------------------------------\n");
 		printf("1.LOGIN\n");
 		printf("2.EXIT\n");
@@ -61,7 +61,7 @@ void showMenu(char menu[50]){	//메뉴를 보여주는 함수
 			EXIT;	//EXIT
 	}
 
-	else if(menu == "func_lb") {
+	else if(strcmp(menu,"func_lb")==0) {
 		printf("--------------------------------------------\n");
 		printf("1.ADD\n");
 		printf("2.UPDATE\n");
@@ -80,7 +80,7 @@ void showMenu(char menu[50]){	//메뉴를 보여주는 함수
 			EXIT;	//EXIT
 	}
 
-	else if(menu == "func_std") {
+	else if(strcmp(menu,"func_std")==0) {
 		printf("--------------------------------------------\n");
 		printf("1.SEARCH\n");
 		printf("2.DISPLAY RENTED BY ME\n");
