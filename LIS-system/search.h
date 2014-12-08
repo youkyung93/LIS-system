@@ -1,16 +1,11 @@
 ﻿#include <stdio.h>
-#include "menu.h"
 
-void searchBook();
-//hihi
+char keyword[100];
+int booknumber;
+int i=1;
 
-void searchBook(){
-	char keyword[100];
+void searchBook(){	
 
-	int booknumber;
-	int i=1;
-	
-	
 	printf("검색할 도서의 이름을 입력하세요 : ");
 	scanf("%c",keyword);
 

@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "menu.h"
 
-void creatAccount() {
+int std_id;
+char std_password[10];
+char std_name[50];
+char std_department[50];
 
-	int std_id;
-	char std_password[10];
-	char std_name[50];
-	char std_department[50];
+void creatAccount() {
 
 	printf("ID: ");
 	scanf("%d", &std_id);
@@ -19,4 +19,7 @@ void creatAccount() {
 
 	printf("DEPARTMENT: ");
 	scanf("%s", &std_department);
+
+	showmenu("select_user");
+
 }

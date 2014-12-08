@@ -1,13 +1,10 @@
 #include <stdio.h>
 
-void deleteBook();
+char searchbook[100] = {0,};
+int booknumber;
 
 void deleteBook(){
-	char searchbook[100] = {0,};
-	char *searchbook;
 
-	int booknumber;
-	
 	printf("원하는 도서의 이름을 입력하세요.");
 	scanf("%c", searchbook);
 
@@ -19,4 +16,6 @@ void deleteBook(){
 	//DB에서 해당 책 삭제하는 기능 구현, 만약 booknumber를 벗어나는 값을 입력하면 종료.
 
 	printf("도서가 삭제되었습니다.");
+
+	showmenu("dd");
 }
