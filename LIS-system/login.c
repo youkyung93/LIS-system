@@ -33,9 +33,9 @@ void loginAccount(){
 
 	if(distinction==2) {	
 		if(strcmp(userlogined,"librarian")==0)			//학생
-			showMenu("func_std");	
-		else if(strcmp(user, "student")==0)			//사서
 			showMenu("func_lb");	
+		else if(strcmp(user, "student")==0)			//사서
+			showMenu("func_std");	
 	}
 
 	else {
