@@ -18,6 +18,30 @@
     <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="account.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="add.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="delete.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="display.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="login.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="search.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="update.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="account.h">

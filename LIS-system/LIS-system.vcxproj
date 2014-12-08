@@ -74,7 +74,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="account.c" />
+    <ClCompile Include="add.c" />
+    <ClCompile Include="delete.c" />
+    <ClCompile Include="display.c" />
+    <ClCompile Include="login.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="menu.c" />
+    <ClCompile Include="search.c" />
+    <ClCompile Include="update.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="account.h" />
