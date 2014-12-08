@@ -24,26 +24,28 @@ void loginAccount(){
 	printf("PASSWORD: ");
 	scanf("%s", &password);
 
-
-	if((id==12345) && (strcmp(password,"master")==0)) {
-		strcpy(userlogined, "librarian");
-		printf("librarian으로 로그인 성공\n");
+	if(strcmp(user, "librarian")==0) {
+		if((id==12345) && (strcmp(password,"master")==0)) {
+			strcpy(userlogined, "librarian");
+			printf("librarian으로 로그인 성공\n");
+		}
 	}
+	else if(strcmp(user, "student")==0) {
+		while((id!=std_id) || (strcmp(password, std_password)==1)){
+			printf("ID 혹은 비밀번호가 틀렸습니다.\n");
 
-	if((id==std_id) && (strcmp(password, std_password)==0)) {
-		strcpy(userlogined, "student");
-		printf("student로 로그인 성공\n");
+			printf("ID:");
+			scanf("%d", &id);
+
+			printf("PASSWORD: ");
+			scanf("%s", &password);
+		}
+
+		if((id==std_id) && (strcmp(password, std_password)==0)) {
+			strcpy(userlogined, "student");
+			printf("student로 로그인 성공\n");
+		}
 	}
-	else {
-		printf("ID 혹은 비밀번호가 틀렸습니다.\n");
-		
-		printf("ID:");
-		scanf("%d", &id);
-
-		printf("PASSWORD: ");
-		scanf("%s", &password);
-	}
-
 	//DB에 저장돼 있는 PASSWORD와의 판별코드 작성. 맞으면 distinction+=1;
 
 
