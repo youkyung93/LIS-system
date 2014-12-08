@@ -24,5 +24,5 @@ void searchBook(){
 	
 	*/
 	
-	//showMenu(func_std);
+	showMenu("func_std");
 }
