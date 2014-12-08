@@ -3,7 +3,7 @@
 #include "menu.h"
 
 int std_id;
-char password[15]="";	//10자리이내
+char std_password[15]="";	//10자리이내
 char std_name[50]="";
 char std_department[50]="";
 
@@ -13,7 +13,7 @@ void createAccount() {
 	scanf("%d", &std_id);
 
 	printf("PASSWORD: ");
-	scanf("%s", &password);
+	scanf("%s", &std_password);
 
 	printf("NAME: ");
 	scanf("%s", &std_name);

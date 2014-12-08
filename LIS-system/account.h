@@ -1,4 +1,5 @@
 #include <stdio.h>
 
-char password[15];
+int std_id;
+char std_password[15];
 void createAccount();

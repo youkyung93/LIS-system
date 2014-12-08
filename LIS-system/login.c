@@ -5,7 +5,7 @@
 #include "account.h"
 
 int id;
-//char password[15]="";
+char password[15]="";
 int distinction=2;	//ID와 PASSWORD가 맞는가 판별
 char userlogined[10]="";
 
@@ -25,8 +25,24 @@ void loginAccount(){
 	scanf("%s", &password);
 
 
-	if((id==12345) && (strcmp(password,"master"))==0)
-		strcpy(userlogined,"librarian");
+	if((id==12345) && (strcmp(password,"master")==0)) {
+		strcpy(userlogined, "librarian");
+		printf("librarian으로 로그인 성공\n");
+	}
+
+	if((id==std_id) && (strcmp(password, std_password)==0)) {
+		strcpy(userlogined, "student");
+		printf("student로 로그인 성공\n");
+	}
+	else {
+		printf("ID 혹은 비밀번호가 틀렸습니다.\n");
+		
+		printf("ID:");
+		scanf("%d", &id);
+
+		printf("PASSWORD: ");
+		scanf("%s", &password);
+	}
 
 	//DB에 저장돼 있는 PASSWORD와의 판별코드 작성. 맞으면 distinction+=1;
 
