@@ -61,7 +61,7 @@ void showMenu(char menu[50]){	//메뉴를 보여주는 함수
 			EXIT;	//EXIT
 	}
 
-	else if(menu == "func_lb") {
+	else if(menu == "func_std") {
 		printf("--------------------------------------------\n");
 		printf("1.ADD\n");
 		printf("2.UPDATE\n");
@@ -80,7 +80,7 @@ void showMenu(char menu[50]){	//메뉴를 보여주는 함수
 			EXIT;	//EXIT
 	}
 
-	else if(menu == "func_std") {
+	else if(menu == "func_lb") {
 		printf("--------------------------------------------\n");
 		printf("1.SEARCH\n");
 		printf("2.DISPLAY RENTED BY ME\n");
